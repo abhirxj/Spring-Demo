@@ -6,11 +6,23 @@
 
     <bean id="dev" class = "org.example.Dev">
 
-    </bean >
-    <bean id="dev1" class = "org.example.Dev">
+<!-- 10     Getter/setter injection of primitive type variables-->
+<!-- 10       <property name="age" value="18"/>-->
+<!-- 10       <constructor-arg value="DS"/>-->
+
+<!-- 10       Getter/setter injection of Non-primitive type variables-->
+<!-- 10       <property name="laptop" ref="lap1"/>-->
+<!-- 10        <constructor-arg ref="lap1"/>-->
+
+<!--        <property name="comp" ref="lap1" />-->
+        <property name="comp" ref="desk1" />
 
     </bean >
-    <bean id="lap" class = "org.example.Laptop">
 
+    <bean id="lap1" class = "org.example.Laptop">
     </bean>
+
+    <bean id="desk1" class = "org.example.Desktop" >
+    </bean>
+
 </beans>

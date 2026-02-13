@@ -1,10 +1,10 @@
 package org.example;
 
-public class Laptop {
+public class Laptop implements Computer{
     public Laptop(){
-        System.out.println("Laptop constructor running");
+        System.out.println("Laptop constructor");
     }
-    public void compiling(){
+    public void compile(){
 
         System.out.println("Compiling in laptop");
     }
